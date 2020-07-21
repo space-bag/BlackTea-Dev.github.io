@@ -33,6 +33,7 @@
 		<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png" />
 
 	</head>
+	<a href="#top"><div class="to-top" id="totop"><i class="fa fa-coffee"></i></div></a>
 	<body class="state1 background-100-e">
 		<!-- <div class="ext-nav background-95-h page-transition">
 			<div class="view half-height">
@@ -79,7 +80,7 @@
 				</div>
 			</div>
 		</div> -->
-		<div class="page-border bottom colors-e background-solid"><a href="#top" class="hover-effect">To <span class="highlight">Top</span></a></div>
+		<div class="page-border bottom colors-e background-solid"></div>
 		<div class="page-border left colors-e background-solid">
 			<ul>
 				<li><a href="https://www.instagram.com/blacktea1500/" target="_blank"><i class="fa fa-instagram"></i></a></li>
@@ -1234,6 +1235,26 @@
 				return base64.decode(x);
 			}
 		}
+		// to Top
+		mybutton = document.getElementById("totop");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 		</script>
 		<script src="bower_components/less.js/dist/less.min.js"></script>
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
