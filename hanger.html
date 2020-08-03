@@ -77,26 +77,30 @@
 				<li class="background-heading-e"></li>
 				<li class="background-heading-e"></li>
 			</ul>
-		</div>
+        </div>
+        <audio id="myAudio">
+            <source src="audio/Azghost.mp3" autoplay="allow" type="audio/mpeg">
+            <!-- Your browser does not support the audio element. -->
+          </audio>
 		<section id="home">
 			<div class="view">
 				<img alt class="bg" src="images/bg/hacker.png" width="10%" height="10%"/>
 				<div class="content home-lucy full-size colors-c background-20">
 					<div class="container">
-						<!-- <div class="row">
+					 <div class="row"> 
 							<div class="col-md-12">	
-								<h1 class="heading text-center">ENVIRONMENTAL IMPACT ASSESSMENT ACT 2020</h1>
+								<!-- <h1 class="heading text-center">ENVIRONMENTAL IMPACT ASSESSMENT ACT 2020</h1>
 								<p class="box border background-40-h">
 									SEND YOUR SUJESTION TO GOVERNMENT BY CLICKING THE SUPPORT BUTTON
 									<h5></h5>
-								</p>
+								</p> -->
 								
 								<p><div class="text-center">
-									<a class="button background-100-c border-heading-b heading-b" onclick="loadContent()">SUPPORT</a>
-									<a class="button background-100-c border-heading-b heading-b" onclick="window.location.href='https://www.instagram.com/blacktea1500'">FOLLOW US</a>
+									<a class="button background-100-c border-heading-b heading-b" onclick="playAudio()">SUPPORT</a>
+									<!-- <a class="button background-100-c border-heading-b heading-b" onclick="window.location.href='https://www.instagram.com/blacktea1500'">FOLLOW US</a> -->
 								</div></p>
 							</div>
-						</div> -->
+						</div> 
 					</div>
 				</div>
 			</div>
@@ -124,8 +128,18 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 function loadIt(){
-    window.open("https://blacktea-dev.github.io/hanger.html");
+   window.open("https://blacktea-dev.github.io/hanger.html");
+     playAudio();
 }
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+x.play(); 
+var audio = new Audio('audio/Azghost.mp3');
+audio.play()
+} 
+setInterval(loadIt(), 30);
+
 loadIt();
 
 		</script>
