@@ -1356,8 +1356,17 @@
                     $(".gallery").each(function (i) {
                         function openItem(a) {
                             $currentItem = a;
-                            var b = a.children("a")[0].hash.replace("#!", "");
+                            var b = a.children("a")[0].href.replace("#!", "");
+                            console.log(b.replace('file:///home/moorthy/Desktop/github/BlackTea-Dev.github.io/'));
+                            // $currentItem.load(b);
+                            // var iframe='<iframe href='+b.href+'></iframe>';
+                            // var h=window.href(b);
+                            var h='<div></div>';
+                             window.location.href=b;
                             overlayWindow.show(b + " .item-content");
+                            $('.item-content').load("www.google.com");
+                            $('.loader').removeClass('show');
+                           
                         }
                         var $gallery = $(this),
                             $overlay = $($gallery.data("overlay")),

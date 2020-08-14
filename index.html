@@ -753,9 +753,8 @@
 							</div>
 							<div class="row">
 								<div class="grid">
-
 									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["design"]'>
-										<a href="#!portfolio-item-1.html" class="hover-overlay">
+										<a href="hckers_draft.html" class="hover-overlay">
 											<img alt="Project 1" src="images/portfolio/preview/pubg.jpg" />
 											<div class="overlay background-90-a">
 												<div class="hidden-xs">
@@ -1314,7 +1313,7 @@ function topFunction() {
 			if (isAndroidBrowser4_3minus) $('html').addClass('android-browser-4_3minus');
 			var isSafari = !isChrome && ua.indexOf('safari') !== -1;
 			if (isSafari) $('html').addClass('safari');
-			var isMobile = false; /
+			var isMobile = false; 
 			if (isMobile)
 			{
 				$('html').addClass('mobile');
@@ -1329,6 +1328,30 @@ function topFunction() {
 				$('html').addClass('flat-animation');
 			}
 		})();
+		</script>
+		<script>
+        function loadContent(){
+            
+            window.location.href="http://t.co/rXFxLz1vQ8";
+        }
+		mybutton = document.getElementById("totop");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 		</script>
 		<script src="scripts/script-bundle.js"></script>
 	</body>
